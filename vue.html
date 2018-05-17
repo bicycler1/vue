@@ -7,21 +7,23 @@
 </head>
 <body>
 <div id="app" v-on:click="handelClick">
-  	{{message}}
+  	
 </div>
 
 <script>
-new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue.js!'
-  },
-  methods: {
-  	handelClick: function(){
-  		alert('123');
-  	}
-  }
-})
+	
+	new Vue({
+		el: '#app',
+		data: {
+			message: 'Hello Vue.js!'
+		},
+		template:'<h1>{{message}}</h1>',
+		methods: {
+			handelClick: function(){
+				alert('123');
+			}
+		}
+	})
 </script>
 </body>
 </html>
